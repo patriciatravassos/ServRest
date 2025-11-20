@@ -31,8 +31,10 @@ Prerequisites
 2. Install Newman (Global Installation)
    · Newman is a command-line collection runner for Postman. Install it globally on your system using npm.
    · Run the following command in your terminal or command prompt:
-   bash
+   
+  ```
    npm install -g newman
+  ```
 
 
  ## How to Run Tests
@@ -52,17 +54,18 @@ This is the preferred method for automated testing and CI/CD pipelines.
 2. Navigate to the directory containing your collection and environment files.
 3. Run the following command:
 
-bash
+```
 newman run ServeRestAPI.postman_collection.json -e ServeRestAPI_env.postman_environment.json --env-var "BaseURL=https://serverest.dev" -r cli,html
-
+```
  
    
 4. (Optional) Install the HTML Reporter for Newman
    · For generating detailed and visually appealing HTML reports, you can install the newman-reporter-html package.
    · Run the following command in your terminal or command prompt:
-   bash
+   
+   ```
    npm install -g newman-reporter-html
-
+   ```
 
 ## Contact:
 email: travassos1985@gmail.com
